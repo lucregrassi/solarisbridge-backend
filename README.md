@@ -52,13 +52,11 @@ The ports must match the ones configured in the app's settings screen. Defaults:
   `altitude_rel_takeoff` and `is_flying`.
 - **`receive_h264_v4.py`** — preferred V4 video receiver. Decodes the raw H.264 stream forwarded by
   the app and shows it with OpenCV. Low-latency decode settings.
-- **`receive_jpeg_v4.py`** — legacy V4 video receiver (JPEG frames). Kept for the older JPEG protocol.
 - **`receive_h264_v5.py`** — V5 video receiver (encoded camera stream).
 
 Video wire format on TCP `6001` (big-endian):
 
 - H.264 (V4/V5): `MAGIC ("VSTR")` + `length (int32)` + frame bytes
-- JPEG (legacy V4): `MAGIC ("VSTR")` + `type (1 byte = 2)` + `length (int32)` + JPEG bytes
 
 In the video windows, press `q` or `ESC` to disconnect.
 
@@ -143,4 +141,5 @@ More information is available on the [SOLARIS project website](https://solaris-h
 
 Lucrezia Grassi
 GitHub: [lucregrassi](https://github.com/lucregrassi)
+
 Email: [lucrezia.grassi@unige.it](mailto:lucrezia.grassi@unige.it)
