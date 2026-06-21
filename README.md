@@ -1,5 +1,9 @@
 # SOLARIS Bridge — Backend (PC side)
 
+<p align="center">
+  <img src="solaris-bridge-banner.png" alt="SOLARIS Bridge banner" width="900">
+</p>
+
 PC-side companion scripts for the **SOLARIS Bridge** Android apps. They talk to the app over the
 local network: they **receive** telemetry and video from the drone/app, and **send** flight, gimbal
 and goto commands to it.
